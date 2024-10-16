@@ -1,0 +1,136 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.main_container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: minmax(200px,1fr) minmax(200px,1fr);
+    grid-template-rows: 0.2fr 2fr;
+    gap: 0.5rem;
+}
+.section{
+    background-color: rgb(255, 255, 255);
+    padding: 2rem;
+}
+.btn-home{
+    background-color: #519e11;
+    border-radius: 5px !important;
+    color: #fff;
+    border: #519e11;
+    padding: 0.4rem 1.5rem;
+    text-align: center;
+}
+.btn-home:hover{
+    background-color: #43840e;
+}
+.head_name{
+    font-size: clamp(1rem, 1vw, 2rem) !important;
+    font-weight: 700 !important;
+}
+.instock{
+    font-size: clamp(0.8rem, 1vw, 2rem) !important;
+    font-weight: 300 !important;
+}
+h2{
+    font-size: clamp(1.5rem, 3vw, 4rem) !important;
+    font-weight: 700 !important;
+}
+.button-group{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.car-btn{
+    background-color: #abcc91 !important;
+    border-radius: 5px !important;
+    color: #000000;
+    border: #519e11;
+    padding: 0.4rem 1.5rem;
+    text-align: center;
+}
+.car-btn:hover{
+    background-color: #cbf4ad !important;
+
+}
+.count_group {
+    display: flex;
+    align-items: center;
+}
+.count_group .bar{
+    margin: 0 1rem;
+}
+
+.count_group p:first-child{
+    font-size: clamp(1rem, 3vw, 3rem) !important;
+    font-weight: 300 !important;
+
+}
+.bar{
+    border-left: 1px solid black;
+    height: 6rem;
+}
+.count_group div {
+    text-align: center;
+}
+.connect button{
+    margin-left: 70%;
+}
+.connect{
+    display: flex;
+    align-items: center;
+}
+.card_img{
+    padding: 0 8rem;
+}
+.card_img .MuiPaper-root{ 
+    height: 70vh;
+}
+.card-media-img {
+    width: 4rem;        
+    height: 26rem;
+    background-color: #def2ce;
+    padding: 4rem;  
+    object-fit: cover;
+  }
+  .card_bottom{
+    background-color: #60a628;
+    max-height: 18.2rem;
+    height: 100%;
+    width: 100%;
+  }
+@media (max-width:768px) {
+
+    .connect button{
+        margin-left: 30%;
+    }
+    .button-group {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+    .count_group p {
+        font-size: 5px !important;
+    }
+    .card_img{
+        padding: 0;
+    }
+    .card-media-img {
+        width: 4rem;        
+        height: auto;  
+        object-fit: cover;
+        padding: 2rem;
+      }
+      .card_bottom{
+        background-color: #60a628;
+        max-height: 50vh !important;
+        height: 100% !important;
+        width: 100%;
+      }
+      .card_img .MuiPaper-root{ 
+        height: 50vh;
+    }
+}
