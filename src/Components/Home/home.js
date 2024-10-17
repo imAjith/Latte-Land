@@ -1,10 +1,12 @@
 import React from 'react';
 import './home.css';
-import Card_Ad from './Card';
+import CardAd from './Card';
+import Body from './body';
 
 export default function Home() {
   return (
-    <div className="main_container">
+    <div className="home">
+    <div className="main_container main_container_top">
       <div className='section'>
         <p className='head_name'>LatteLand</p>
       </div>
@@ -48,9 +50,15 @@ export default function Home() {
       <br />
       <br />
       <div className='card_img'>
-        <Card_Ad img='/assets/coffee_bea.webp' />
+        <CardAd img='/assets/coffee_bea.webp' />
       </div>
       </div>
+    </div>
+    <div className="main_container_top">
+      <Body />
+      <Body />
+      <Body />
+    </div>
     </div>
   )
 }

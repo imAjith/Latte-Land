@@ -5,6 +5,10 @@
     font-size: 0.9rem;
     font-weight: 500;
 }
+.main_container_top{
+    scroll-snap-align:start;
+    height: 100vh;
+}
 .main_container{
     height: 100vh;
     display: grid;
@@ -15,6 +19,8 @@
 .section{
     background-color: rgb(255, 255, 255);
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
 }
 .btn-home{
     background-color: #519e11;
@@ -98,12 +104,50 @@ h2{
   }
   .card_bottom{
     background-color: #60a628;
-    max-height: 18.2rem;
+    max-height: 12.2rem;
     height: 100%;
     width: 100%;
   }
-@media (max-width:768px) {
 
+  .row_card {
+    display: flex !important;
+    justify-content: space-around !important;
+    padding: 1rem;
+  }
+
+.col-6-card {
+    width: 37% !important;
+  }
+  .card-btn_group {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .home{
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth; 
+  }
+@media (min-width:768px) {
+    .card_img{
+        padding: 0 8rem;
+        right: -4rem;
+        position: relative;
+    }
+}
+@media (max-width:768px) {
+    .row_card {
+        flex-direction: column;
+        padding: auto;
+      }
+    .card-btn_group{
+        flex-direction: column;
+    }
+      .col-60-card {
+        width: 100%;
+        margin-bottom: 10px;
+      }
     .connect button{
         margin-left: 30%;
     }
@@ -133,4 +177,8 @@ h2{
       .card_img .MuiPaper-root{ 
         height: 50vh;
     }
+    .car-btn {
+        margin-bottom: 10px;
+        width: 100%;
+      }
 }

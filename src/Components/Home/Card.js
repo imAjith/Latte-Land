@@ -1,9 +1,7 @@
 import * as React from 'react';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
 export default function Card_Ad(props) {
@@ -16,16 +14,26 @@ export default function Card_Ad(props) {
         image={props.img}
       />
       <div className='card_bottom'>
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          Lizard
-        </Typography>
+      <div className='row row_card'>
+        <div className='col-6 col-6-card'>
         <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-          Lizards are a widespread group of squamate reptiles, with over 6,000
+            Price
         </Typography>
-      </CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          $2.50-
+        </Typography>
+        </div>
+        <div className='col-6 col-6-card'>
+        <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+            Available types
+        </Typography>
+        <Typography gutterBottom variant="h5" component="div">
+          Espresso, Latte
+        </Typography>
+        </div>
+      </div>
       <CardActions>
-      <div className='button-group'>
+      <div className='button-group card-btn_group'>
         <button className='car-btn' type='button'>Order now</button>
         <button className='car-btn' type='button'>View details</button>
       </div>
