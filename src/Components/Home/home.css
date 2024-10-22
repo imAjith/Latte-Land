@@ -7,7 +7,10 @@
 }
 .main_container_top{
     scroll-snap-align:start;
-    height: 100vh;
+    height: 100dvh;
+}
+.main_container_body{
+height: auto !important;
 }
 .main_container{
     height: 100vh;
@@ -127,16 +130,22 @@ h2{
     height: 100vh;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
-    scroll-behavior: smooth; 
+    scroll-behavior: smooth;
+    overflow-x: hidden; 
   }
 @media (min-width:768px) {
+    /* for big screens */
     .card_img{
         padding: 0 8rem;
         right: -4rem;
         position: relative;
     }
+    .main_container_body{
+        height: 100dvh !important;
+        }
 }
-@media (max-width:768px) {
+@media (max-width:768px) { 
+    /* for small device */
     .row_card {
         flex-direction: column;
         padding: auto;

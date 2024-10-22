@@ -50,13 +50,11 @@ export default function Home() {
       <br />
       <br />
       <div className='card_img'>
-        <CardAd img='/assets/coffee_bea.webp' />
+        <CardAd img='/assets/images/coffee_bea.webp' />
       </div>
       </div>
     </div>
-    <div className="main_container_top">
-      <Body />
-      <Body />
+    <div className="main_container_top main_container_body">
       <Body />
     </div>
     </div>
