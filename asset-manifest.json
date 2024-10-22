@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/latte-land/static/css/main.063c7856.css",
+    "main.js": "/latte-land/static/js/main.61fff4a7.js",
+    "static/js/453.7772c3f6.chunk.js": "/latte-land/static/js/453.7772c3f6.chunk.js",
+    "static/media/slick.svg": "/latte-land/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/latte-land/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/latte-land/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/latte-land/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/latte-land/index.html",
+    "main.063c7856.css.map": "/latte-land/static/css/main.063c7856.css.map",
+    "main.61fff4a7.js.map": "/latte-land/static/js/main.61fff4a7.js.map",
+    "453.7772c3f6.chunk.js.map": "/latte-land/static/js/453.7772c3f6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.063c7856.css",
+    "static/js/main.61fff4a7.js"
+  ]
+}
